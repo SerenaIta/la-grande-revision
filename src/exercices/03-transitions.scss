@@ -5,6 +5,11 @@
   padding: 20px;
   background: #8ecae6;
   border-radius: 10px;
+  transition: transform 0.4s;
+}
+
+.calltoaction:hover {
+  transform: scale(1.2);
 }
 
 .button {
@@ -12,6 +17,13 @@
   display: inline-block;
   padding: 10px 20px;
   background: #8ecae6;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button:hover {
+  background-color: #38a4b7;
+  color: white;
 }
 
 .card {
@@ -20,6 +32,20 @@
   padding: 20px;
   background: #8ecae6;
   border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.card:hover {
+  background-color: #38a4b7;
+}
+
+.card h2 {
+  transition: transform 0.2s 0.2s ease-in-out;
+}
+
+.card:hover h2 {
+  transform: translateX(15px);
 }
 
 .card-title {
