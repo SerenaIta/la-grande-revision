@@ -6,6 +6,16 @@
     border-radius: 50%;
     border: 5px solid #8ecae6;
     border-top-color: #023047;
+    animation: rotating 2s linear infinite;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .progress {
@@ -20,5 +30,30 @@
     height: 100%;
     background: #023047;
     border-radius: 10px;
+    animation-name: changeWidth;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes changeWidth {
+    0% {
+      width: 0%;
+      background-color: #8ecae6;
+    }
+
+    33% {
+      width: 50%;
+      background-color: #023047;
+    }
+
+    66% {
+      width: 0%;
+      background-color: #8ecae6;
+    }
+
+    100% {
+      width: 100%;
+      background-color: #023047;
+    }
   }
 }
