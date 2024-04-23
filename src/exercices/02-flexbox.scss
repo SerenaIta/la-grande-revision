@@ -4,6 +4,7 @@
     margin-bottom: 20px;
     border: 1px solid #000;
     background: #8ecae6;
+    display: flex;
   }
 
   .box {
@@ -13,14 +14,24 @@
   }
 
   .wrapper-1 {
+    justify-content: flex-end;
   }
 
   .wrapper-2 {
+    align-items: center;
+    justify-content: center;
   }
 
   .wrapper-3 {
+    align-items: flex-end;
+    justify-content: space-around;
   }
 
   .wrapper-4 {
+    flex-wrap: wrap;
+  }
+
+  .wrapper-4 .box {
+    width: 50%;
   }
 }
